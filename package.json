@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.2",
     "jest": "20.0.4",
     "moment": "2.19.3",
     "node-sass-chokidar": "^0.0.3",
@@ -21,7 +22,9 @@
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
+    "start-local": "npm-run-all -p watch-css start-js",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "jest",
