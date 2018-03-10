@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^5.0.1",
     "express": "^4.16.2",
+    "firebase": "^4.11.0",
     "jest": "20.0.4",
     "moment": "2.19.3",
     "node-sass-chokidar": "^0.0.3",
@@ -12,12 +14,14 @@
     "numeral": "^2.0.6",
     "react": "^16.2.0",
     "react-addons-shallow-compare": "15.6.0",
+    "react-app-env": "^1.2.0",
     "react-dates": "12.3.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "react-router-dom": "4.2.2",
     "react-scripts": "1.1.1",
-    "redux": "3.7.2"
+    "redux": "3.7.2",
+    "redux-thunk": "2.2.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
