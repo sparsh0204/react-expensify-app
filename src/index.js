@@ -19,11 +19,12 @@ const  App =() => (
     </Provider>
 );
 
-ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
-
-store.dispatch(startSetExpenses()).then(() => {
-    ReactDOM.render(<App />, document.getElementById('root'));
-
-});
+// ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
+//
+// store.dispatch(startSetExpenses()).then(() => {
+//     ReactDOM.render(<App />, document.getElementById('root'));
+//
+// });
+ReactDOM.render(<App />, document.getElementById('root'));
 
 registerServiceWorker();
